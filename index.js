@@ -7,7 +7,7 @@ const app=express()
 const port=3000;
 
 //mongodb connection
-mongoose.connect('mongodb://localhost:27017/branddb').then(
+mongoose.connect('mongodb+srv://Dharahasini:Modugu25@cluster0.8ayur.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(
     ()=> console.log('Connected to mongodb'))
    .catch(err => console.error('Error connecting to MongoDB ',err));
 //middleware
